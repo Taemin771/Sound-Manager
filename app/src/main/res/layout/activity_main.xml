@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#201127">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#201127"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#201127"
+                android:scrollbarTrackVertical="@android:drawable/ic_menu_sort_by_size"
+                android:visibility="visible"
+                app:navigationIcon="@drawable/ic_launcher_background"
+                app:subtitleTextColor="#D597E4"
+                app:titleTextColor="#201127" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/smicon2" />
+
+            <LinearLayout
+                android:layout_width="404dp"
+                android:layout_height="302dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="40dp">
+
+                <ImageButton
+                    android:id="@+id/btn_Timeset"
+                    android:layout_width="370dp"
+                    android:layout_height="103dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#00594747"
+                    android:padding="4sp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/buttonsizenew" />
+
+                <ImageButton
+                    android:id="@+id/btn_volume"
+                    android:layout_width="370dp"
+                    android:layout_height="103dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#00FFFFFF"
+                    android:padding="4sp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/record" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#E2B0EF"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/purple_200"
+        app:menu="@menu/drawer_menu"></com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

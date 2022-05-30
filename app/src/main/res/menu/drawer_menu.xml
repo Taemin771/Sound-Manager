@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Sound Manager 홈">
+        </item>
+        <item android:id="@+id/nav_drawer1"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="알람/소리 설정">
+        </item>
+        <item android:id="@+id/nav_drawer2"
+            android:icon="@drawable/ic_baseline_volume_up_24"
+            android:title="유튜브 동시녹음">
+        </item>
+        </group>
+
+
+
+
+</menu>
